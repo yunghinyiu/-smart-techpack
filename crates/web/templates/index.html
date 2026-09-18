@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{ project.garment.name }} - techpack</title>
+</head>
+<body>
+<h1>{{ project.garment.name }}</h1>
+<p>Type: {{ project.garment.garment_type }} | Spec v{{ project.spec_version.version }}</p>
+
+<h2>Fabric Pantones ({{ project.pantones.len() }})</h2>
+<ul>
+{% for p in project.pantones %}
+<li>{{ p.code }} {{ p.name }} ({{ p.hex }})</li>
+{% endfor %}
+</ul>
+
+<h2>Callouts ({{ project.callouts.len() }})</h2>
+<ol>
+{% for c in project.callouts %}
+<li>{{ c.label }}</li>
+{% endfor %}
+</ol>
+
+<h2>Detail specs ({{ project.details.len() }})</h2>
+<h2>POM rows ({{ project.pom.len() }})</h2>
+</body>
+</html>
