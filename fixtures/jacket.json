@@ -1,0 +1,59 @@
+{
+  "spec_version": { "version": 1 },
+  "garment": { "garment_type": "jacket", "name": "Cropped Military Jacket" },
+  "photo": { "path": "photo.jpg" },
+  "pantones": [
+    { "code": "19-0515 TCX", "name": "Forest Night", "hex": "#2f3b2f" },
+    { "code": "16-1334 TCX", "name": "Tan", "hex": "#c49a6c" },
+    { "code": "19-1213 TCX", "name": "Brown Stone", "hex": "#5c4a3a" }
+  ],
+  "callouts": [
+    { "id": "c01", "label": "Point collar", "x": 0.5, "y": 0.08, "detail_id": "d01" },
+    { "id": "c02", "label": "Front zipper", "x": 0.55, "y": 0.2, "detail_id": null },
+    { "id": "c03", "label": "Throat tab", "x": 0.62, "y": 0.16, "detail_id": null },
+    { "id": "c04", "label": "Right raglan seam", "x": 0.36, "y": 0.24, "detail_id": "d04" },
+    { "id": "c05", "label": "Left raglan seam", "x": 0.64, "y": 0.24, "detail_id": null },
+    { "id": "c06", "label": "Right snap tab", "x": 0.3, "y": 0.34, "detail_id": null },
+    { "id": "c07", "label": "Left snap tab", "x": 0.7, "y": 0.34, "detail_id": null },
+    { "id": "c08", "label": "Body panel", "x": 0.42, "y": 0.42, "detail_id": null },
+    { "id": "c09", "label": "Left sleeve pocket", "x": 0.72, "y": 0.44, "detail_id": null },
+    { "id": "c10", "label": "Right sleeve", "x": 0.28, "y": 0.5, "detail_id": null },
+    { "id": "c11", "label": "Left sleeve", "x": 0.72, "y": 0.52, "detail_id": null },
+    { "id": "c12", "label": "Right cuff", "x": 0.26, "y": 0.62, "detail_id": null },
+    { "id": "c13", "label": "Left cuff", "x": 0.74, "y": 0.62, "detail_id": null },
+    { "id": "c14", "label": "Rib waistband", "x": 0.5, "y": 0.6, "detail_id": null },
+    { "id": "c15", "label": "Zipper pull", "x": 0.52, "y": 0.56, "detail_id": null }
+  ],
+  "details": [
+    {
+      "id": "d01",
+      "callout_id": "c01",
+      "seam_type": "Single needle",
+      "allowance_mm": 10.0,
+      "topstitch": "6mm double needle",
+      "notes": "Collar stands 4cm at center back, fused."
+    },
+    {
+      "id": "d04",
+      "callout_id": "c04",
+      "seam_type": "Overlock",
+      "allowance_mm": 12.7,
+      "topstitch": "None",
+      "notes": "Snug fit, ribbing should hold shape, no flare at opening."
+    }
+  ],
+  "pom": [
+    {
+      "code": "chest",
+      "description": "Chest width, 2.5cm below armhole",
+      "tolerance_mm": 6.0,
+      "sizes": { "XS": 52.5, "S": 55.0, "M": 57.5, "L": 60.0, "XL": 62.5 }
+    },
+    {
+      "code": "length",
+      "description": "Back length from high point shoulder",
+      "tolerance_mm": 6.0,
+      "sizes": { "XS": 60.0, "S": 61.5, "M": 63.0, "L": 64.5, "XL": 66.0 }
+    }
+  ]
+}
