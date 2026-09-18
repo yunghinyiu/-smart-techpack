@@ -3,6 +3,13 @@
 **/*.rs.bk
 *.pdb
 
+# Local runtime data: uploaded photos, weights, spike inputs/outputs.
+# Nothing under data/ is ever committed.
+*.onnx
+# Exception: tiny synthetic model used by vision's offline unit tests.
+/data/
+!crates/vision/tests/fixtures/*.onnx
+
 # Editor
 .idea/
 .vscode/

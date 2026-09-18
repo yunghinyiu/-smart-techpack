@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Photo {{ id }} - techpack</title>
+</head>
+<body>
+<h1>Photo: {{ id }}</h1>
+<p><a href="/">Back to project</a></p>
+
+<h2>Original vs cutout</h2>
+<div style="display: flex; gap: 16px; flex-wrap: wrap;">
+<figure>
+<img src="/projects/{{ id }}/photo/original" alt="uploaded garment photo" style="max-width: 480px;">
+<figcaption>Original ({{ meta.width }}x{{ meta.height }} {{ meta.format }})</figcaption>
+</figure>
+<figure>
+<img src="/projects/{{ id }}/photo/preview" alt="garment cutout preview" style="max-width: 480px; background: repeating-conic-gradient(#ccc 0 25%, #fff 0 50%) 0 0 / 24px 24px;">
+<figcaption>Cutout preview (checkerboard = transparent)</figcaption>
+</figure>
+</div>
+
+<h2>Mask</h2>
+<p>Foreground: {{ "{:.1}"|format(meta.fg_fraction * 100.0) }}% of pixels.
+<a href="/projects/{{ id }}/photo/mask">View mask PNG</a></p>
+</body>
+</html>
