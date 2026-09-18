@@ -1,7 +1,12 @@
 [workspace]
-members = ["crates/core", "crates/web"]
+members = ["crates/core", "crates/vision", "crates/web"]
 resolver = "2"
 
 [workspace.dependencies]
+anyhow = "1"
+image = "0.25"
+ndarray = "0.16"
+ort = "=2.0.0-rc.13"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
+thiserror = "2"

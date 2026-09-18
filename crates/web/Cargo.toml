@@ -5,7 +5,10 @@ edition = "2024"
 
 [dependencies]
 techpack-core = { path = "../core" }
-axum = "0.8"
-tokio = { version = "1", features = ["macros", "rt-multi-thread", "net"] }
+techpack-vision = { path = "../vision" }
+axum = { version = "0.8", features = ["multipart"] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "net", "fs"] }
 askama = "0.12"
+image = { workspace = true }
+serde = { workspace = true }
 serde_json = { workspace = true }

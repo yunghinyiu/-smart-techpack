@@ -24,5 +24,11 @@
 
 <h2>Detail specs ({{ project.details.len() }})</h2>
 <h2>POM rows ({{ project.pom.len() }})</h2>
+
+<h2>Upload a garment photo</h2>
+<form action="/projects/demo/photo" method="post" enctype="multipart/form-data">
+<input type="file" name="photo" accept="image/jpeg,image/png" required>
+<button type="submit">Isolate garment</button>
+</form>
 </body>
 </html>

@@ -1,0 +1,12 @@
+[package]
+name = "techpack-vision"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = { workspace = true }
+image = { workspace = true }
+# Pinned: ort 2.x is pre-release and its API still moves between RCs.
+# Revisit when 2.0 stable lands.
+ort = { workspace = true }
+thiserror = { workspace = true }
